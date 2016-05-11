@@ -8,7 +8,6 @@ VOLUME /data/confd
 
 RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk upgrade --update && \
-    apk add libboost1.42-dev && \
     apk add mongodb@testing
 
 CMD /opt/rancher/bin/run.sh

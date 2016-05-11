@@ -1,0 +1,10 @@
+[template]
+src = "mongo-add-user.tmpl"
+dest = "/opt/rancher/adduser.sh"
+reload_cmd = "/opt/rancher/adduser.sh"
+keys = [
+  "/self/service/containers/0/name",
+]
+keys2 = [
+  "/servers/carqualifier/db/mongodb/etl"
+]

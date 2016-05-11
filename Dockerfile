@@ -5,7 +5,6 @@ ADD ./templates /etc/confd/templates
 ADD ./run.sh /opt/rancher/bin
 
 VOLUME /data/confd
-VOLUME /opt/rancher/bin
 
 RUN \
   echo "http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \

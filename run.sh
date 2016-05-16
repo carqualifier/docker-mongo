@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/bash
 
 echo $MONGODB_KEYFILE > /opt/rancher/sec/mongodb-keyfile
 

@@ -7,7 +7,7 @@ RUN mkdir -p /opt/rancher/sec && mkdir -p /opt/rancher/bin \
   && chmod 600 /opt/rancher/sec/mongodb-keyfile \
   && chown root:root /opt/rancher/sec/mongodb-keyfile
 
-ADD run.sh /opt/rancher/bin
+ADD run.sh /opt/rancher/bin/run.sh
 RUN chmod u+x /opt/rancher/bin/run.sh
 
 ENTRYPOINT /opt/rancher/bin/run.sh

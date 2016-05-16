@@ -9,5 +9,3 @@ RUN mkdir -p /opt/rancher/sec && mkdir -p /opt/rancher/bin \
 
 ADD run.sh /opt/rancher/bin/run.sh
 RUN chmod u+x /opt/rancher/bin/run.sh
-
-ENTRYPOINT /opt/rancher/bin/run.sh
